@@ -19,7 +19,9 @@ public:
 	static void right_time_print_matrix(int** a, int n);
 	static void quick_sort(int* a, int left, int right);
 	static void three_sum(int* a,int n);
+	static bool judgeRing(Node *node);
 	static Node* cross_node(Node* node);
+	
 };
 
 

@@ -233,15 +233,54 @@ void algorithms::three_sum(int* a,int n)
 
 
 //链表相关
+
+//判断是否有环
+bool algorithms::judgeRing(Node *head)
+{
+	if (head == NULL || head->getNext() == NULL)
+		return false;
+
+	Node* slow = head;
+	Node* fast = head;
+
+	do{
+		slow = slow->getNext();
+		fast = fast->getNext()->getNext();
+
+		if (slow == fast) {
+			return true;
+		}
+	} while (fast != NULL && fast->getNext() != NULL);
+
+	return false;
+}
+
+
 //找环节点
 Node* algorithms::cross_node(Node *head)
 {
 	Node* slow = head;
-	Node* fast = head->getNext();
+	Node* fast = head;
+
+	do {
+		slow = slow->getNext();
+		fast = fast->getNext()->getNext();
+	} while (slow != fast);
+
+	int count = 0;
+	
+	do {
+		fast = fast->getNext();
+		count++;
+	} while (slow != fast);
+
+	for (int i = 0; i < count; i++) {
+		fast = fast->getNext();
+	}
 
 	while (slow != fast) {
 		slow = slow->getNext();
-		fast = fast->getNext()->getNext();
+		fast = fast->getNext();
 	}
 
 	return slow;
