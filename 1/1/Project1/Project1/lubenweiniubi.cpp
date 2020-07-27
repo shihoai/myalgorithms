@@ -9,9 +9,9 @@
 int main()
 {
 	srand(time(0));
-	Node *head = constructBase::generateRandLinkList(9);
-	support_functions::print_linked_list(head);
-	algorithms::reorderList(head);
-	support_functions::print_linked_list(head);
+	vector<int> b = constructBase::generateArray(15);
+	support_functions::print_array(b,15);
+	int c = algorithms::maxSumArray(b);
+	cout << c << endl;
 	return 0;
 }

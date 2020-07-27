@@ -78,3 +78,13 @@ void constructBase::generateIncreaseTwoArray(vector<vector<int>>& matrix)
 	}
 }
 
+vector<int> constructBase::generateArray(int n)
+{
+	vector<int> a = support_functions::initOneVector(n);
+	for (auto& i : a) {
+		i = support_functions::random(-10, 10);
+	}
+
+	return a;
+}
+

@@ -23,6 +23,7 @@ public:
 	static void three_sum(vector<int> a,int n);
 	static int  rand5_to_rand7();
 	static bool findInIncreaseTwo(vector<vector<int>> vec, int target);
+	static int maxSumArray(vector<int>a);
 
 	//¡¥±Ìœ‡πÿ
 	static bool judgeRing(Node *node);

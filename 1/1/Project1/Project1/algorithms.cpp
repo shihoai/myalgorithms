@@ -471,3 +471,15 @@ void algorithms::reorderList(Node* head)
 		temp1 = temp1->getNext();
 	}
 }
+
+int algorithms::maxSumArray(vector<int> a)
+{
+	vector<int>dp = support_functions::initOneVector(a.size());
+	dp[0] = a[0];
+	int max_ = a[0];
+	for (int i = 1; i < a.size(); i++) {
+		dp[i] = support_functions::max(a[i], dp[i - 1] + a[i]);
+		max_ = support_functions::max(dp[i], max_);
+	}
+	return max_;
+}

@@ -12,7 +12,7 @@ public:
 	static Node* generateLinkList(int base, int length);
 	static Node* generateRandLinkList(int length);
 	static void generateIncreaseTwoArray(vector<vector<int>>& matrix);
-
+	static vector<int> generateArray(int n);
 };
 
 #endif
