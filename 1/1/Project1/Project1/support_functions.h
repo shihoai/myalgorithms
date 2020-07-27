@@ -15,14 +15,18 @@ public:
 	//基本辅助函数
 	static int max(int a, int b);
 	static void swap(int& a, int& b);
-	static void print_matrix(int** a, int m, int n);
-	static void print_array(int* a, int n);
-	static int random(int a, int b);
+	static void print_matrix(vector<vector<int>> a, int m, int n);
+	static void print_array(vector<int> a, int n);
+	static int genRandom();
+	static int  random(int a, int b);
+	static vector<int> initOneVector(int n);
+	static vector<vector<int>> initTwoVector(int m, int n);
 
 	//链表相关
 	static void print_node(Node* node);
 	static void print_linked_list(Node* node);
 	static void print_linked_list(Node* node, int n);
+	static void delete_linked_list(Node* node);
 
 };
 

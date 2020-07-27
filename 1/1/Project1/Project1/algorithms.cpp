@@ -49,8 +49,41 @@ void algorithms::lcs(string a, string b)
 
 }
 
+string algorithms::replaceSpace(string s)
+{
+	if (s.size() == 0)
+		return s;
+
+	int count = 0;
+	for (int i = 0; i < s.size(); i++) {
+		if (s[i] == ' ')
+			count++;
+	}
+
+	char* answer = new char[s.size() + 1 + 2 * count];
+	int i = s.size() - 1;
+	int j = 2 * count + s.size() - 1;
+	answer[j + 1] = '\0';
+
+	while (i >= 0) {
+		if (s[i] == ' ') {
+			answer[j--] = '0';
+			answer[j--] = '2';
+			answer[j--] = '%';
+		}
+		else {
+			answer[j--] = s[i];
+		}
+		i--;
+	}
+
+	string s1 = answer;
+	return s1;
+}
+
+
 //斜向输出数组
-void algorithms::x_print_matrix(int** a, int n)
+void algorithms::x_print_matrix(vector<vector<int>> a, int n)
 {
 	for (int i = n - 1; i > 0; i--) {
 		for (int j = 0; i + j < n; j++) {
@@ -68,7 +101,7 @@ void algorithms::x_print_matrix(int** a, int n)
 }
 
 //顺时针输出数组
-void algorithms::right_time_print_matrix(int** a, int n)
+void algorithms::right_time_print_matrix(vector<vector<int>> a, int n)
 {
 	bool** check = new bool* [n];
 	for (int i = 0; i < n; i++) {
@@ -163,7 +196,7 @@ void algorithms::right_time_print_matrix(int** a, int n)
 }
 
 //快排
-void algorithms::quick_sort(int* a, int left, int right)
+void algorithms::quick_sort(vector<int> a, int left, int right)
 {
 	if (left > right)
 		return;
@@ -192,7 +225,7 @@ void algorithms::quick_sort(int* a, int left, int right)
 }
 
 //三数和为0
-void algorithms::three_sum(int* a,int n)
+void algorithms::three_sum(vector<int> a,int n)
 {
 	algorithms::quick_sort(a, 0, n - 1);
 	for (int i = 0; i < n; i++) {
@@ -230,7 +263,51 @@ void algorithms::three_sum(int* a,int n)
 	}
 }
 
+//给定rand5函数生成rand7
+int algorithms::rand5_to_rand7()
+{
+	int a = rand() % 5;
+	int b = rand() % 5;
 
+	int c = a * 5 + b;
+
+	while (c == 22 || c == 23 || c == 24 || c == 25) {
+		a = rand() % 5;
+		b = rand() % 5;
+		c = a * 5 + b;
+	}
+
+	return c % 7 + 1 ;
+}
+
+//在一个向右递增，向下递增的二维数组找到目标
+bool algorithms::findInIncreaseTwo(vector<vector<int>> a, int target)
+{
+	if (a.size() == 0)
+		return false;
+
+	if (a[0].size() == 0)
+		return false;
+
+	int x_length = a.size();
+	int y_length = a[0].size();
+
+	int i = 0;
+	int j = y_length - 1;
+
+	while (i < x_length && j >= 0) {
+		if (target == a[i][j]) {
+			return true;
+		}else if (a[i][j] < target) {
+				i++;
+		}
+		else {
+			j--;
+		}
+	}
+
+	return false;
+}
 
 //链表相关
 
@@ -274,6 +351,8 @@ Node* algorithms::cross_node(Node *head)
 		count++;
 	} while (slow != fast);
 
+	fast = head;
+	slow = head;
 	for (int i = 0; i < count; i++) {
 		fast = fast->getNext();
 	}
@@ -284,4 +363,111 @@ Node* algorithms::cross_node(Node *head)
 	}
 
 	return slow;
+}
+
+//合并有序链表
+Node* algorithms::merget_list(Node *l1, Node *l2)
+{
+	if (l1 == NULL)
+		return l2;
+
+	if (l2 == NULL)
+		return l1;
+
+	Node* p = NULL;
+	if (l1->getVal() < l2->getVal()) {
+		p = l1;
+		p->setNext(merget_list(l1->getNext(), l2));
+	}
+	else {
+		p = l2;
+		p->setNext(merget_list(l1, l2->getNext()));
+	}
+
+	return p;
+}
+
+//反转链表_递归
+Node* algorithms::RecReverseLink(Node *head)
+{
+	if (head->getNext() == NULL)
+		return head;
+
+	Node* temp = RecReverseLink(head->getNext());
+	head->getNext()->setNext(head);
+	head->setNext(NULL);
+
+	return temp;
+}
+
+Node* algorithms::IteReverseLink(Node* head)
+{
+	Node* p = NULL;
+	Node* temp = head;
+	Node* temp1 = head->getNext();
+
+	while (temp) {
+		temp->setNext(p);
+		p = temp;
+		temp = temp1;
+
+		if (temp == NULL)
+			break;
+
+		temp1 = temp1->getNext();
+	}
+
+	return p;
+}
+
+//倒数第K个节点
+Node* algorithms::lastKNode(Node *head,int k)
+{
+	Node* fast = head;
+
+	for (int i = 0; i < k; i++) {
+		fast = fast->getNext();
+	}
+
+	while (fast != NULL) {
+		head = head->getNext();
+		fast = fast->getNext();
+	}
+
+	return head;
+}
+
+//重排链表
+void algorithms::reorderList(Node* head)
+{
+	if (head == NULL || head->getNext() == NULL || head->getNext()->getNext() == NULL)
+		return;
+
+	Node* slow = head;
+	Node* fast = head;
+
+	while (fast && fast->getNext()) {
+		slow = slow->getNext();
+		fast = fast->getNext()->getNext();
+	}
+
+	Node* temp = slow->getNext();
+	slow->setNext(NULL);
+
+	Node* lasthead = IteReverseLink(temp);
+	temp = head;
+	Node* temp1 = head->getNext();
+	Node* lastnext = lasthead->getNext();
+	while (lasthead) {
+		lasthead->setNext(temp1);
+		temp->setNext(lasthead);
+		lasthead = lastnext;
+
+		if (lasthead == NULL)
+			break;
+
+		lastnext = lastnext->getNext();
+		temp = temp1;
+		temp1 = temp1->getNext();
+	}
 }

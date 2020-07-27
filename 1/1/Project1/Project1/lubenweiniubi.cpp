@@ -2,18 +2,16 @@
 #include "publibs.h"
 #include "algorithms.h"
 #include "support_functions.h"
-#include "coustructLinkList.h"
-
-
+#include "constructBase.h"
 
 
 
 int main()
 {
-	Node *head = roundLinkList();
-	support_functions::print_linked_list(head, 9);
-
-	Node* answer = algorithms::cross_node(head);
-	support_functions::print_node(answer);
+	srand(time(0));
+	Node *head = constructBase::generateRandLinkList(9);
+	support_functions::print_linked_list(head);
+	algorithms::reorderList(head);
+	support_functions::print_linked_list(head);
 	return 0;
 }

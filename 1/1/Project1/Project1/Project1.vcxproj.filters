@@ -30,6 +30,9 @@
     <ClCompile Include="treeNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="constructBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="algorithms.h">
@@ -47,7 +50,7 @@
     <ClInclude Include="publibs.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="coustructLinkList.h">
+    <ClInclude Include="constructBase.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
