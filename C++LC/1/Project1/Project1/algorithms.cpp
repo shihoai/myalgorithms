@@ -81,6 +81,54 @@ string algorithms::replaceSpace(string s)
 	return s1;
 }
 
+string algorithms::reverseString(string s)
+{
+	string answer = "";
+	reverse(s.begin(), s.end());
+	int j = 0;
+	for (int i = 0; i < s.size(); i++) {
+		if (s[i] == ' ') {
+			string sub = s.substr(j, i - j);
+			reverse(sub.begin(), sub.end());
+			answer += sub + " ";
+			j = i + 1;
+		}
+	}
+
+	if (j < s.size()) {
+		string sub = s.substr(j, s.size() - j);
+		reverse(sub.begin(), sub.end());
+		answer += sub;
+	}
+
+	return answer;
+}
+
+int algorithms::calDistance(string a, string b)
+{
+	vector<vector<int>> dp = support_functions::initTwoVector(a.size() + 1, b.size() + 1);
+	for (int i = 0; i <= a.size(); i++) {
+		dp[i][0] = i;
+	}
+
+	for (int j = 0; j <= b.size(); j++) {
+		dp[0][j] = j;
+	}
+	
+	for (int i = 1; i <= a.size(); i++) {
+		for (int j = 1; j <= b.size(); j++) {
+			if (a[i - 1] == b[j - 1]) {
+				dp[i][j] = dp[i - 1][j - 1];
+			}
+			else {
+				dp[i][j] = support_functions::min(dp[i - 1][j - 1], support_functions::min(dp[i][j - 1], dp[i - 1][j])) + 1;
+			}
+		}
+	}
+
+	return dp[a.size()][b.size()];
+}
+
 
 //斜向输出数组
 void algorithms::x_print_matrix(vector<vector<int>> a, int n)
@@ -309,6 +357,39 @@ bool algorithms::findInIncreaseTwo(vector<vector<int>> a, int target)
 	return false;
 }
 
+int algorithms::maxSumArray(vector<int> a)
+{
+	vector<int>dp = support_functions::initOneVector(a.size());
+	dp[0] = a[0];
+	int max_ = a[0];
+	for (int i = 1; i < a.size(); i++) {
+		dp[i] = support_functions::max(a[i], dp[i - 1] + a[i]);
+		max_ = support_functions::max(dp[i], max_);
+	}
+	return max_;
+}
+
+vector<vector<int>> algorithms::mergeInterval(vector<vector<int>> a)
+{
+	sort(a.begin(), a.end());
+	vector<vector<int>>ans;
+	int i = 0;
+	while(i < a.size()){
+		int t = a[i][1];
+		int j = i + 1;
+
+		while (j < a.size() && a[j][0] <= t) {
+			t = support_functions::max(a[j][1], t);
+			j++;
+		}
+
+		ans.push_back({ a[i][0],t });
+		i = j;
+	}
+
+	return ans;
+}
+
 //链表相关
 
 //判断是否有环
@@ -472,14 +553,3 @@ void algorithms::reorderList(Node* head)
 	}
 }
 
-int algorithms::maxSumArray(vector<int> a)
-{
-	vector<int>dp = support_functions::initOneVector(a.size());
-	dp[0] = a[0];
-	int max_ = a[0];
-	for (int i = 1; i < a.size(); i++) {
-		dp[i] = support_functions::max(a[i], dp[i - 1] + a[i]);
-		max_ = support_functions::max(dp[i], max_);
-	}
-	return max_;
-}

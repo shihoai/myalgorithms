@@ -15,6 +15,8 @@ public:
 	//字符串相关
 	static void lcs(string a,string b);
 	static string replaceSpace(string s);
+	static string reverseString(string s);
+	static int calDistance(string a, string b);
 
 	//矩阵与数组相关
 	static void x_print_matrix(vector<vector<int>> a, int n);
@@ -24,6 +26,7 @@ public:
 	static int  rand5_to_rand7();
 	static bool findInIncreaseTwo(vector<vector<int>> vec, int target);
 	static int maxSumArray(vector<int>a);
+	static vector<vector<int>> mergeInterval(vector<vector<int>> a);
 
 	//链表相关
 	static bool judgeRing(Node *node);

@@ -20,6 +20,14 @@ int support_functions::max(int a, int b)
 	return b;
 }
 
+int support_functions::min(int a, int b)
+{
+	if (a > b)
+		return b;
+
+	return a;
+}
+
 
 void support_functions::swap(int& a, int& b)
 {
@@ -28,11 +36,11 @@ void support_functions::swap(int& a, int& b)
 	b = temp;
 }
 
-void support_functions::print_matrix(vector<vector<int>> a, int m, int n)
+void support_functions::print_matrix(vector<vector<int>> a)
 {
-	for (int i = 0; i < m; i++) {
-		for (int j = 0; j < n; j++) {
-			cout << a[i][j] << " ";
+	for (auto& i : a) {
+		for (auto& j : i) {
+			cout << j<<" ";
 		}
 		cout << endl;
 	}
@@ -50,6 +58,22 @@ void support_functions::print_array(vector<int> a, int n)
 int support_functions::random(int a, int b)
 {
 	return rand() % (b - a) + a;
+}
+
+void support_functions::randomInitVector(vector<int>& a, int up,int down)
+{
+	for (auto& i : a) {
+		i = random(down, up);
+	}
+}
+
+void support_functions::randomInitTwoVector(vector<vector<int>>& a, int up,int down)
+{
+	for (auto& i : a) {
+		for (auto& j : i) {
+			j = random(down, up);
+		}
+	}
 }
 
 
