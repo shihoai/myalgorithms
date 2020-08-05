@@ -129,6 +129,47 @@ int algorithms::calDistance(string a, string b)
 	return dp[a.size()][b.size()];
 }
 
+int algorithms::compareVersion(string a, string b)
+{
+	int i = 0;
+	int j = 0;
+
+	while (i < a.size() || j < b.size()) {
+		int x = i;
+		int y = j;
+		while (x < a.size() && a[x] != '.')
+			x++;
+
+		while (y < b.size() && b[y] != '.') {
+			y++;
+		}
+
+		int c1, c2;
+		if (i == x) {
+			c1 = 0;
+		}
+		else {
+			c1 = atoi(a.substr(i, x - i).c_str());
+		}
+
+		if (j == y) {
+			c2 = 0;
+		}
+		else {
+			c2 = atoi(b.substr(j, y - j).c_str());
+		}
+
+		if (c1 > c2) {
+			return 1;
+		}
+		else if (c1 < c2) {
+			return -1;
+		}
+		i = x + 1;
+		j = y + 1;
+	}
+	return 0;
+}
 
 //斜向输出数组
 void algorithms::x_print_matrix(vector<vector<int>> a, int n)
@@ -244,9 +285,9 @@ void algorithms::right_time_print_matrix(vector<vector<int>> a, int n)
 }
 
 //快排
-void algorithms::quick_sort(vector<int> a, int left, int right)
+void algorithms::quick_sort(vector<int>& a, int left, int right)
 {
-	if (left > right)
+	if (left >= right)
 		return;
 
 	int standard = a[left];
@@ -388,6 +429,46 @@ vector<vector<int>> algorithms::mergeInterval(vector<vector<int>> a)
 	}
 
 	return ans;
+}
+
+void algorithms::twoDivideRecur(vector<int> a, int target,int left,int right,int& index)
+{
+	if (left > right) {
+		return;
+	}
+
+	int middle = (left + right) / 2;
+	if (a[middle] == target) {
+		index = middle;
+		return;
+	}
+	else if (a[middle] > target) {
+		twoDivideRecur(a,target, left, middle - 1, index);
+	}
+	else {
+		twoDivideRecur(a, target, middle + 1, right,index);
+	}
+}
+
+int algorithms::twoDivideLoop(vector<int> a, int target)
+{
+	int left = 0;
+	int right = a.size() - 1;
+
+	while (left <= right) {
+		int middle = (left + right) / 2;
+		if (a[middle] == target) {
+			return middle;
+		}
+		else if (a[middle] > target) {
+			right = middle - 1;
+		}
+		else {
+			left = middle + 1;
+		}
+	}
+
+	return -1;
 }
 
 //链表相关

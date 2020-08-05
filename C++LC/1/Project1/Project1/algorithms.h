@@ -17,16 +17,19 @@ public:
 	static string replaceSpace(string s);
 	static string reverseString(string s);
 	static int calDistance(string a, string b);
+	static int compareVersion(string a, string b);
 
 	//矩阵与数组相关
 	static void x_print_matrix(vector<vector<int>> a, int n);
 	static void right_time_print_matrix(vector<vector<int>> a, int n);
-	static void quick_sort(vector<int> a, int left, int right);
+	static void quick_sort(vector<int>& a, int left, int right);
 	static void three_sum(vector<int> a,int n);
 	static int  rand5_to_rand7();
 	static bool findInIncreaseTwo(vector<vector<int>> vec, int target);
 	static int maxSumArray(vector<int>a);
 	static vector<vector<int>> mergeInterval(vector<vector<int>> a);
+	static void twoDivideRecur(vector<int>a, int target,int left,int right,int& index);
+	static int twoDivideLoop(vector<int>a, int target);
 
 	//链表相关
 	static bool judgeRing(Node *node);
