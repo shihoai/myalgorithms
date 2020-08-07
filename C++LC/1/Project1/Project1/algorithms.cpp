@@ -19,7 +19,7 @@ algorithms::~algorithms()
 //最大公共子序列
 void algorithms::lcs(string a, string b)
 {
-	int dp[30][30];
+	vector<vector<int>>dp = support_functions::initTwoVector(a.size() + 1, b.size() + 1);
 
 	for (int i = 0; i <= a.size(); i++) {
 		dp[i][0] = 0;
@@ -29,24 +29,20 @@ void algorithms::lcs(string a, string b)
 		dp[0][j] = 0;
 	}
 
-	int length = -1;
 
 	for (int i = 1; i <= a.size(); i++) {
 		for (int j = 1; j <= b.size(); j++) {
 			if (a[i - 1] == b[j - 1]) {
-				dp[i][j] = max(dp[i - 1][j - 1], max(dp[i - 1][j], dp[i][j - 1])) + 1;
+				dp[i][j] = dp[i - 1][j - 1] + 1;
 			}
 			else {
-				dp[i][j] = 0;
+				dp[i][j] = support_functions::max(dp[i - 1][j], dp[i][j - 1]);
 			}
 
-			if (length < dp[i][j])
-				length = dp[i][j];
 		}
 	}
-
-	cout << length << endl;
-
+	cout << dp[a.size()][b.size()] << endl;
+	
 }
 
 string algorithms::replaceSpace(string s)
@@ -431,6 +427,7 @@ vector<vector<int>> algorithms::mergeInterval(vector<vector<int>> a)
 	return ans;
 }
 
+//二分递归
 void algorithms::twoDivideRecur(vector<int> a, int target,int left,int right,int& index)
 {
 	if (left > right) {
@@ -450,6 +447,7 @@ void algorithms::twoDivideRecur(vector<int> a, int target,int left,int right,int
 	}
 }
 
+//二分循环
 int algorithms::twoDivideLoop(vector<int> a, int target)
 {
 	int left = 0;
@@ -469,6 +467,27 @@ int algorithms::twoDivideLoop(vector<int> a, int target)
 	}
 
 	return -1;
+}
+
+int algorithms::findMoreInt(vector<int>a)
+{
+	int votes = 0;
+	int x = 0;
+
+	for (int i = 0; i < a.size(); i++) {
+		if (votes == 0) {
+			x = a[i];
+		}
+
+		if (x == a[i]) {
+			votes++;
+		}
+		else {
+			votes--;
+		}
+	}
+
+	return x;
 }
 
 //链表相关

@@ -12,6 +12,15 @@ support_functions::~support_functions()
 }
 
 //»ù±¾¸¨Öúº¯Êý
+
+void support_functions::inputArray(vector<int>& a)
+{
+	for (int i = 0; i < a.size(); i++) {
+		cin >> a[i];
+	}
+	return;
+}
+
 int support_functions::max(int a, int b)
 {
 	if (a > b)

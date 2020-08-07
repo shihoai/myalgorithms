@@ -34,6 +34,7 @@ public class LRU {
         if(node == null){
             return -1;
         }
+        moveToHead(node);
         return node.value;
     }
 

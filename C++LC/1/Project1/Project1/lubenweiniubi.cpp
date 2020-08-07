@@ -9,13 +9,12 @@
 int main()
 {
 	srand(time(0));
-	string a;
-	string b;
-
-	while (cin >> a >> b) {
-		cout<<algorithms::compareVersion(a, b)<<endl;
+	int n;
+	while (cin >> n) {
+		vector<int>a = support_functions::initOneVector(n);
+		support_functions::inputArray(a);
+		cout << algorithms::findMoreInt(a) << endl;
 	}
-
 
 	return 0;
 }

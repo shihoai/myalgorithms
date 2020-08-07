@@ -30,6 +30,7 @@ public:
 	static vector<vector<int>> mergeInterval(vector<vector<int>> a);
 	static void twoDivideRecur(vector<int>a, int target,int left,int right,int& index);
 	static int twoDivideLoop(vector<int>a, int target);
+	static int findMoreInt(vector<int>a);
 
 	//¡¥±Ìœ‡πÿ
 	static bool judgeRing(Node *node);
@@ -39,6 +40,8 @@ public:
 	static Node* IteReverseLink(Node* node);
 	static Node* lastKNode(Node *node,int k);
 	static void reorderList(Node* head);
+
+	
 };
 
 

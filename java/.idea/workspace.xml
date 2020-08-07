@@ -2,65 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29082629-ab54-4d86-ab2b-ffc910e78147" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v15/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v15/Browse.VC.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v15/ipch/AutoPCH/2df3aa63f7697ba5/LUBENWEINIUBI.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v15/ipch/AutoPCH/f1d0adefe46332f8/ALGORITHMS.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v15/ipch/AutoPCH/f3e32d1b59443c9b/ALGORITHMS.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v16/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v16/Browse.VC.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v16/ipch/AutoPCH/235dad9398142147/LINKEDLISTNODE.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v16/ipch/AutoPCH/44dfce2ff4fd0170/CONSTRUCTBASE.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v16/ipch/AutoPCH/64e16709bf1f7ab9/SUPPORT_FUNCTIONS.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v16/ipch/AutoPCH/77bd164b2218554f/LINKEDLISTNODE.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v16/ipch/AutoPCH/7c918b2b654b8a44/ALGORITHMS.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v16/ipch/AutoPCH/7f71dbdef949b1cc/LUBENWEINIUBI.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v16/ipch/AutoPCH/ae9e3a22c31fb2f3/SUPPORT.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v16/ipch/AutoPCH/b7bcf8c1b0d5dbbe/PUBLIBS.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v16/ipch/AutoPCH/c035010ccc4076ac/ALGORITHMS.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v16/ipch/AutoPCH/c3d63ca19db8d626/TREENODE.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v16/ipch/AutoPCH/c67447275c87bb14/LUBENWEINIUBI.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/.vs/Project1/v16/ipch/AutoPCH/c736d2554f2fa8f1/SUPPORT_FUNCTIONS.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Debug/Project1.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Debug/Project1.ilk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Debug/Project1.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/LinkedListNode.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/Project1.Build.CppClean.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/Project1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/Project1.tlog/CL.command.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/Project1.tlog/CL.read.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/Project1.tlog/CL.write.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/Project1.tlog/Project1.lastbuildstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/Project1.tlog/link.command.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/Project1.tlog/link.read.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/Project1.tlog/link.write.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/Project1.vcxproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/algorithms.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/constructBase.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/lubenweiniubi.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/support_functions.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/treeNode.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/vc142.idb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Debug/vc142.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/LinkedListNode.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/LinkedListNode.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Project1.vcxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Project1.vcxproj.filters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/Project1.vcxproj.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/algorithms.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/algorithms.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/constructBase.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/constructBase.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/lubenweiniubi.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/publibs.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/support.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/support_functions.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/support_functions.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/training_data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/treeNode.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/treeNode.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1/1/Project1/Project1/x64/Debug/Project1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/.vs/Project1/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/.vs/Project1/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/.vs/Project1/v16/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/.vs/Project1/v16/Browse.VC.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/.vs/Project1/v16/ipch/AutoPCH/13bf0e0a0096daca/LUBENWEINIUBI.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/.vs/Project1/v16/ipch/AutoPCH/13bf0e0a0096daca/LUBENWEINIUBI.ipch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/.vs/Project1/v16/ipch/AutoPCH/7a57fcc441db373b/SUPPORT_FUNCTIONS.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/.vs/Project1/v16/ipch/AutoPCH/7a57fcc441db373b/SUPPORT_FUNCTIONS.ipch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/.vs/Project1/v16/ipch/AutoPCH/ea99dd5cb8df2dea/ALGORITHMS.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/.vs/Project1/v16/ipch/AutoPCH/ea99dd5cb8df2dea/ALGORITHMS.ipch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Debug/Project1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Debug/Project1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Debug/Project1.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Debug/Project1.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Debug/Project1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Debug/Project1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/Project1.log" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/Project1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/Project1.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/Project1.tlog/CL.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/Project1.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/Project1.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/Project1.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/Project1.tlog/CL.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/algorithms.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/algorithms.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/constructBase.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/constructBase.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/lubenweiniubi.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/lubenweiniubi.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/support_functions.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/support_functions.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/vc142.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/vc142.idb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/vc142.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/Debug/vc142.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/algorithms.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/algorithms.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/algorithms.h" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/algorithms.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/lubenweiniubi.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/lubenweiniubi.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/support_functions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/support_functions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/support_functions.h" beforeDir="false" afterPath="$PROJECT_DIR$/../C++LC/1/Project1/Project1/support_functions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +47,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/1" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -93,17 +65,44 @@
       <option name="presentableId" value="Default" />
       <updated>1595903883510</updated>
       <workItem from="1595903885816" duration="14000" />
+      <workItem from="1596766706971" duration="765000" />
+      <workItem from="1596768563638" duration="101000" />
+      <workItem from="1596768771921" duration="969000" />
+      <workItem from="1596786919973" duration="25000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="739" y="260" key="FileChooserDialogImpl" timestamp="1595903897179">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596768659768">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1596768659768" />
+    <state x="526" y="182" key="FileChooserDialogImpl" timestamp="1596786942752">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="526" y="182" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596786942752" />
     <state x="739" y="260" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1595903897179" />
+    <state x="-85" y="0" width="1040" height="718" key="SettingsEditor" timestamp="1596768789351">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="-85" y="0" width="1040" height="718" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596768789351" />
     <state x="334" y="129" key="new project wizard" timestamp="1595903898252">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="334" y="129" key="new project wizard/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1595903898252" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/1/src/LRU.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
